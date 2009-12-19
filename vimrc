@@ -29,7 +29,7 @@ autocmd FileType haskell compiler ghc
 " configure browser for haskell_doc.vim
 let g:haddock_browser="/Users/alexey/bin/openbrowser"
 let g:haddock_browser_callformat="%s file:///%s"
-let g:haddock_docdir="/opt/local/share/ghc-6.10.1/doc/ghc/"
+let g:haddock_docdir="/opt/local/share/ghc-6.10.4/doc/ghc/"
 let g:haddoc_indexfiledir="~/.vim"
 
 " haskell interactivity
@@ -41,3 +41,7 @@ let g:haddoc_indexfiledir="~/.vim"
 
 "         *** Scheme
 autocmd Filetype scheme source ~/.vim/ftplugin/SchemeMode.vim
+
+"         *** Python
+autocmd FileType python set softtabstop=4
+autocmd FileType python set shiftwidth=4
