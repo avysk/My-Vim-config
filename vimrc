@@ -45,3 +45,6 @@ autocmd Filetype scheme source ~/.vim/ftplugin/SchemeMode.vim
 "         *** Python
 autocmd FileType python set softtabstop=4
 autocmd FileType python set shiftwidth=4
+
+"         *** OCaml
+let g:ocaml_folding=1
