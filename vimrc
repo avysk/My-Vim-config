@@ -9,6 +9,9 @@ set backspace=indent,eol,start
 set noequalalways
 set expandtab
 
+" for MacVim
+set imd
+
 "                        *** Decorations ***
 set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
 set list
