@@ -21,6 +21,10 @@ set showcmd
 set wildmenu
 
 "                         *** Languages ***
+"         *** C
+
+set cino=:0
+
 "         *** Haskell
 
 " style
