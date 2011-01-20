@@ -31,6 +31,8 @@ set cino=:0
 " style
 
 autocmd FileType haskell set expandtab
+autocmd FileType haskell set softtabstop=4
+autocmd FileType haskell set shiftwidth=4
 
 " use ghc functionality for haskell files
 autocmd FileType haskell compiler ghc
