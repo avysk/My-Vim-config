@@ -38,10 +38,11 @@ autocmd FileType haskell set shiftwidth=4
 autocmd FileType haskell compiler ghc
 
 " configure browser for haskell_doc.vim
-let g:haddock_browser="/Users/alexey/bin/openbrowser"
-let g:haddock_browser_callformat="%s file:///%s"
-let g:haddock_docdir="/opt/local/ghc-7.0.1/share/doc/ghc/"
-let g:haddoc_indexfiledir="~/.vim"
+" let g:haddock_browser="/Users/alexey/bin/openbrowser"
+" let g:haddock_browser="w3m"
+" let g:haddock_browser_callformat="%s file:///%s"
+" let g:haddock_docdir="/opt/local/ghc-7.0.1/share/doc/ghc/html"
+" let g:haddoc_indexfiledir="~/.vim"
 
 " haskell interactivity - requires Ruby in vim
 "autocmd FileType haskell source ~/.vim/plugin/shim.vim
