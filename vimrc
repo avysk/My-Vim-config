@@ -61,6 +61,9 @@ autocmd FileType python set shiftwidth=4
 "         *** OCaml
 let g:ocaml_folding=1
 
+"         *** Lisp
+let g:lisp_rainbow=1
+
 "         *** Clojure
 let g:vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
 let g:vimclojure#ParenRainbow=1           " Rainbow parentheses'!
