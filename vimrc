@@ -78,7 +78,7 @@ autocmd FileType python set shiftwidth=4
 
 "         *** OCaml
 let g:ocaml_folding=1
-ab _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
+iabbrev _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
 set shiftwidth=2
 
 "         *** Lisp
