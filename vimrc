@@ -33,6 +33,7 @@ set list
 set ruler
 set laststatus=2
 set showcmd
+set statusline=(%n)\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 
 "                         *** Settings for text in Russian ***
 map <F12> :so ~/.vim/scripts/text.vim<C-M>
