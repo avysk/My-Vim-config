@@ -23,9 +23,6 @@ set incsearch
 set foldenable
 set foldmethod=syntax
 
-" for MacVim
-set imd
-
 "                        *** Decorations ***
 "set listchars=
 set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
