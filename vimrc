@@ -79,6 +79,7 @@ autocmd FileType python setlocal shiftwidth=4
 "         *** OCaml
 let g:ocaml_folding=1
 autocmd FileType ocaml iabbrev <buffer> _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
+autocmd FileType ocaml setlocal softtabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2
 
 "         *** Lisp
