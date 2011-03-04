@@ -1,11 +1,14 @@
-set spellfile=~/.vim/spell/my.utf-8.add
-set spell
-set spelllang=ru_yo
-set nolist
-set linebreak
+setlocal spellfile=~/.vim/spell/my.utf-8.add
+setlocal spell
+setlocal spelllang=ru_yo
+setlocal nolist
+setlocal linebreak
+
+" Next two are unfortunately global
 set showbreak=.\ \ 
 set display+=lastline
-map <Down> gj
-map <Up> gk
-imap <Down> <C-o>gj
-imap <Up> <C-o>gk
+
+map <buffer> <Down> gj
+map <buffer> <Up> gk
+imap <buffer> <Down> <C-o>gj
+imap <buffer> <Up> <C-o>gk

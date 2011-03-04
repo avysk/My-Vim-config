@@ -36,8 +36,8 @@ set showcmd
 set statusline=(%n)\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 
 "                         *** Settings for text in Russian ***
-map <F12> :so ~/.vim/scripts/text.vim<C-M>
-imap <F12> <Esc>:so ~/.vim/scripts/text.vim<C-M>
+map <Leader>rus :so ~/.vim/scripts/text.vim<C-M>
+imap <Leader>rus <Esc>:so ~/.vim/scripts/text.vim<C-M>
 
 "                         *** Languages ***
 "         *** C
@@ -48,9 +48,9 @@ set cino=:0
 
 " style
 
-autocmd FileType haskell set expandtab
-autocmd FileType haskell set softtabstop=4
-autocmd FileType haskell set shiftwidth=4
+autocmd FileType haskell setlocal expandtab
+autocmd FileType haskell setlocal softtabstop=4
+autocmd FileType haskell setlocal shiftwidth=4
 
 " use ghc functionality for haskell files
 autocmd FileType haskell compiler ghc
@@ -73,13 +73,13 @@ autocmd FileType haskell compiler ghc
 autocmd Filetype scheme source ~/.vim/ftplugin/SchemeMode.vim
 
 "         *** Python
-autocmd FileType python set softtabstop=4
-autocmd FileType python set shiftwidth=4
+autocmd FileType python setlocal softtabstop=4
+autocmd FileType python setlocal shiftwidth=4
 
 "         *** OCaml
 let g:ocaml_folding=1
 iabbrev _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
-autocmd FileType ocaml set shiftwidth=2
+autocmd FileType ocaml setlocal shiftwidth=2
 
 "         *** Lisp
 let g:lisp_rainbow=1
