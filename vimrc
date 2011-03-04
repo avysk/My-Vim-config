@@ -34,22 +34,6 @@ set ruler
 set laststatus=2
 set showcmd
 
-" Let us have some menus in console mode
-if !has("gui_running")
-        " I want menus in English
-        set langmenu=none
-        source $VIMRUNTIME/menu.vim
-        set wildmenu
-        set cpo-=<
-        set wcm=<C-Z>
-        map <F9> :emenu <C-Z>
-        imap <F9> <Esc>:emenu <C-Z>
-        unmenu! ToolBar
-        unmenu ToolBar
-        unmenu! PopUp
-        unmenu PopUp
-endif
-
 "                         *** Settings for text in Russian ***
 map <F12> :so ~/.vim/scripts/text.vim<C-M>
 imap <F12> <Esc>:so ~/.vim/scripts/text.vim<C-M>
