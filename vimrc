@@ -8,6 +8,20 @@ set modelines=5
 set backspace=indent,eol,start
 set noequalalways
 set expandtab
+set showmatch
+
+" Remember marks in 20 last files
+" Remember up to 1000 lines per register
+set viminfo='20,<1000
+
+" Search options
+set ignorecase
+set smartcase
+set incsearch
+
+" Folding
+set foldenable
+set foldmethod=syntax
 
 " for MacVim
 set imd
@@ -19,7 +33,26 @@ set list
 set ruler
 set laststatus=2
 set showcmd
-set wildmenu
+
+" Let us have some menus in console mode
+if !has("gui_running")
+        " I want menus in English
+        set langmenu=none
+        source $VIMRUNTIME/menu.vim
+        set wildmenu
+        set cpo-=<
+        set wcm=<C-Z>
+        map <F9> :emenu <C-Z>
+        imap <F9> <Esc>:emenu <C-Z>
+        unmenu! ToolBar
+        unmenu ToolBar
+        unmenu! PopUp
+        unmenu PopUp
+endif
+
+"                         *** Settings for text in Russian ***
+map <F12> :so ~/.vim/scripts/text.vim<C-M>
+imap <F12> <Esc>:so ~/.vim/scripts/text.vim<C-M>
 
 "                         *** Languages ***
 "         *** C
@@ -60,6 +93,8 @@ autocmd FileType python set shiftwidth=4
 
 "         *** OCaml
 let g:ocaml_folding=1
+ab _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
+
 
 "         *** Lisp
 let g:lisp_rainbow=1
