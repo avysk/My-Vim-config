@@ -25,7 +25,8 @@ set foldmethod=syntax
 
 "                        *** Decorations ***
 "set listchars=
-set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
+"set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
+set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
 set list
 set ruler
 set laststatus=2
