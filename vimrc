@@ -26,8 +26,12 @@ set foldmethod=syntax
 "                        *** Decorations ***
 "set listchars=
 "set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
-set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
-set list
+if ($TERM=="screen")
+        set nolist
+else
+        set list
+        set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
+endif
 set ruler
 set laststatus=2
 set showcmd
