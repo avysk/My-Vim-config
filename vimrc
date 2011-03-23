@@ -23,6 +23,15 @@ set incsearch
 set foldenable
 set foldmethod=syntax
 
+" Buffers
+set switchbuf=usetab,newtab
+map <Leader>bb :buf 
+map <Leader>vb :vertical sb 
+
+
+" Tabs
+set tabpagemax=20
+
 "                        *** Decorations ***
 "set listchars=
 "set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
