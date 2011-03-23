@@ -109,6 +109,8 @@ function GetClojureFold()
             return ">1"
       elseif getline(v:lnum) =~ '^\s*(defmethod.*\s'
             return ">1"
+      elseif getline(v:lnum) =~ '^(ns\s'
+            return ">1"
       elseif getline(v:lnum) =~ '^\s*$'
             let my_cljnum = v:lnum
             let my_cljmax = line("$")
@@ -116,14 +118,16 @@ function GetClojureFold()
             while (1)
                   let my_cljnum = my_cljnum + 1
                   if my_cljnum > my_cljmax
-                        return "<1"
+                       return "<1"
                   endif
 
                   let my_cljdata = getline(my_cljnum)
 
 " If we match an empty line, stop folding
-                  if my_cljdata =~ '^$'
-                        return "<1"
+                  "if my_cljdata =~ '^$'
+                  if my_cljdata =~ '^('
+                        "return "<1"
+                        return 0
                   else
                         return "="
                   endif
