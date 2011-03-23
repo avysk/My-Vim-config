@@ -18,3 +18,7 @@ map <Leader>font :set guifont=Inconsolata\ Medium\ 16<C-M>
 
 set lines=40
 set columns=80
+
+" I always want this in gui
+set list
+set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
