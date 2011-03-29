@@ -31,7 +31,7 @@ if g:vimclojure#HighlightBuiltins != 0
 		\ "Cond":      "if if-not if-let when when-not when-let "
 		\            . "when-first cond condp case",
 		\ "Exception": "try catch finally throw",
-		\ "Repeat":    "recur map mapcat reduce filter for doseq dorun "
+		\ "Repeat":    "recur map mapcat reduce filter for doseq doseqpar dorun "
 		\            . "doall dotimes map-indexed keep keep-indexed",
 		\ "Special":   ". def do fn if let new quote var loop",
 		\ "Variable":  "*warn-on-reflection* this *assert* "
