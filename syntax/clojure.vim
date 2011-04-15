@@ -33,7 +33,7 @@ if g:vimclojure#HighlightBuiltins != 0
 		\ "Exception": "try catch finally throw",
 		\ "Repeat":    "recur map mapcat reduce filter for doseq doseqpar dorun "
 		\            . "doall dotimes map-indexed keep keep-indexed",
-		\ "Special":   ". def do fn if let new quote var loop",
+		\ "Special":   ". def do fn if let new quote var loop with-disposable",
 		\ "Variable":  "*warn-on-reflection* this *assert* "
 		\            . "*agent* *ns* *in* *out* *err* *command-line-args* "
 		\            . "*print-meta* *print-readably* *print-length* "
@@ -46,7 +46,7 @@ if g:vimclojure#HighlightBuiltins != 0
 		\ "Define":    "def- defn defn- defmacro defmulti defmethod "
 		\            . "defstruct defonce declare definline definterface "
 		\            . "defprotocol defrecord deftype "
-		\            . "with-disposable",
+		\            . "deftest-with-logger",
 		\ "Macro":     "and or -> assert with-out-str with-in-str with-open "
 		\            . "locking destructure ns dosync binding delay "
 		\            . "lazy-cons lazy-cat time assert doc with-precision "
@@ -216,8 +216,8 @@ if vimclojure#ParenRainbow != 0
 	syn region clojureSexpLevel5 matchgroup=clojureParen5 start="(" matchgroup=clojureParen5 end=")" contained contains=@clojureTopCluster,clojureSexpLevel6
 	syn region clojureSexpLevel6 matchgroup=clojureParen6 start="(" matchgroup=clojureParen6 end=")" contained contains=@clojureTopCluster,clojureSexpLevel7
 	syn region clojureSexpLevel7 matchgroup=clojureParen7 start="(" matchgroup=clojureParen7 end=")" contained contains=@clojureTopCluster,clojureSexpLevel8
-	syn region clojureSexpLevel8 matchgroup=clojureParen8 start="(" matchgroup=clojureParen8 end=")" contained contains=@clojureTopCluster,clojureSexpLevel9
-	syn region clojureSexpLevel9 matchgroup=clojureParen9 start="(" matchgroup=clojureParen9 end=")" contained contains=@clojureTopCluster,clojureSexpLevel0
+	syn region clojureSexpLevel8 matchgroup=clojureParen8 start="(" matchgroup=clojureParen8 end=")" contained contains=@clojureTopCluster,clojureSexpLevel0
+"	syn region clojureSexpLevel9 matchgroup=clojureParen9 start="(" matchgroup=clojureParen9 end=")" contained contains=@clojureTopCluster,clojureSexpLevel0
 else
 	syn region clojureSexp       matchgroup=clojureParen0 start="(" matchgroup=clojureParen0 end=")"           contains=@clojureTopCluster
 endif
@@ -274,15 +274,23 @@ HiLink clojureParen0    Delimiter
 
 if vimclojure#ParenRainbow != 0
 	if &background == "dark"
-		highlight default clojureParen1 ctermfg=yellow      guifg=orange1
-		highlight default clojureParen2 ctermfg=green       guifg=yellow1
-		highlight default clojureParen3 ctermfg=cyan        guifg=greenyellow
-		highlight default clojureParen4 ctermfg=magenta     guifg=green1
-		highlight default clojureParen5 ctermfg=red         guifg=springgreen1
-		highlight default clojureParen6 ctermfg=yellow      guifg=cyan1
-		highlight default clojureParen7 ctermfg=green       guifg=slateblue1
-		highlight default clojureParen8 ctermfg=cyan        guifg=magenta1
-		highlight default clojureParen9 ctermfg=magenta     guifg=purple1
+"		highlight default clojureParen1 ctermfg=yellow      guifg=orange1
+"		highlight default clojureParen2 ctermfg=green       guifg=yellow1
+"		highlight default clojureParen3 ctermfg=cyan        guifg=greenyellow
+"		highlight default clojureParen4 ctermfg=magenta     guifg=green1
+"		highlight default clojureParen5 ctermfg=red         guifg=springgreen1
+"		highlight default clojureParen6 ctermfg=yellow      guifg=cyan1
+"		highlight default clojureParen7 ctermfg=green       guifg=slateblue1
+"		highlight default clojureParen8 ctermfg=cyan        guifg=magenta1
+"		highlight default clojureParen9 ctermfg=magenta     guifg=purple1
+		highlight default clojureParen1 ctermfg=green       guifg=yellow1
+		highlight default clojureParen2 ctermfg=cyan        guifg=greenyellow
+		highlight default clojureParen3 ctermfg=magenta     guifg=green1
+		highlight default clojureParen4 ctermfg=red         guifg=springgreen1
+		highlight default clojureParen5 ctermfg=yellow      guifg=cyan1
+		highlight default clojureParen6 ctermfg=green       guifg=slateblue1
+		highlight default clojureParen7 ctermfg=cyan        guifg=magenta1
+		highlight default clojureParen8 ctermfg=magenta     guifg=purple1
 	else
 		highlight default clojureParen1 ctermfg=darkyellow  guifg=orangered3
 		highlight default clojureParen2 ctermfg=darkgreen   guifg=orange2
@@ -298,4 +306,6 @@ endif
 
 delcommand HiLink
 
+hi Constant guifg=#00ccff
+hi PreProc guifg=#00ff00
 let b:current_syntax = "clojure"
