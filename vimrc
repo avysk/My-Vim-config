@@ -34,13 +34,14 @@ set tabpagemax=20
 
 "                        *** Decorations ***
 "set listchars=
-"set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
-if ($TERM=="screen")
-        set nolist
-else
-        set list
-        set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
-endif
+set list
+set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
+"if ($TERM=="screen")
+"        set nolist
+"else
+"        set list
+"        set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
+"endif
 set ruler
 set laststatus=2
 set showcmd
