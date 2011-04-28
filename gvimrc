@@ -9,6 +9,7 @@ endif
 
 if has("gui_gtk2")
         colorscheme darkblue
+        "colorscheme ir_black
         set guifont=Liberation\ Mono\ 14
         set guioptions=aegimrLt
         set guioptions=aci
