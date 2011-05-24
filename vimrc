@@ -9,6 +9,7 @@ set backspace=indent,eol,start
 set noequalalways
 set expandtab
 set showmatch
+set path+=** " Search in all subdirectories
 
 " Remember marks in 20 last files
 " Remember up to 1000 lines per register
