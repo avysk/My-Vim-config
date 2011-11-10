@@ -33,7 +33,7 @@ if g:vimclojure#HighlightBuiltins != 0
 		\ "Exception": "try catch finally throw",
 		\ "Repeat":    "recur map mapcat reduce filter for doseq doseqpar dorun "
 		\            . "doall dotimes map-indexed keep keep-indexed",
-		\ "Special":   ". def do fn if let new quote var loop with-disposable",
+		\ "Special":   ". def do fn if let new quote var loop with-resources",
 		\ "Variable":  "*warn-on-reflection* this *assert* "
 		\            . "*agent* *ns* *in* *out* *err* *command-line-args* "
 		\            . "*print-meta* *print-readably* *print-length* "
