@@ -4,9 +4,9 @@ endif
 
 Snippet defn (defn <{}>"<{}>"[<{}>]<{}>)
 Snippet defn- (defn- <{}>"<{}>"[<{}>]<{}>)
-Snippet let (let [<{}>] <{}>)
+Snippet let (let [<{}>]<{}>)
 Snippet if (if <{}><{}><{}>
 
-Snippet wd (with-disposable [<{}>] <{}>)
+Snippet wr (with-resources[<{}>]<{}>)
 
 Snippet TODO XXX(alexey): <{}>
