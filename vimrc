@@ -51,6 +51,14 @@ set statusline=(%n)\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 "                         *** Settings for text in Russian ***
 map <Leader>rus :so ~/.vim/scripts/text.vim<C-M>
 
+"                         *** Bindings ***
+map <F4> :ScratchTab<CR>
+map <F13> :ScratchTab<CR>
+map <F5> :OpenScratch<CR>
+map <F6> :CloseScratch<CR>
+map <F14> :OpenScratch<CR>
+map <F15> :CloseScratch<CR>
+
 "                         *** Languages ***
 "         *** C
 
