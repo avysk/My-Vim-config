@@ -16,10 +16,12 @@ function! OpenScratchWindow()
     execute "tabdo CloseScratch"
     execute "tabn " . old_tab
     if bufexists("--scratch--")
-        execute "vertical 40new"
+        execute "vertical rightbelow 40new"
+        "execute "wincmd L"
         execute "buf --scratch--"
     else
-        execute "vertical 40new"
+        execute "vertical rightbelow 40new"
+        "execute "wincmd L"
         execute "file --scratch--"
         setlocal buftype=nofile
         setlocal bufhidden=hide
@@ -33,6 +35,7 @@ function! CloseScratchWindow()
     if winnr > 0
         execute winnr . "wincmd w"
         execute "wincmd c"
+        execute "wincmd ="
     endif
 endfunction
 
