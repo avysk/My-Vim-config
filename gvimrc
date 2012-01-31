@@ -16,6 +16,8 @@ if has("gui_gtk2")
 endif
 
 map <Leader>font :set guifont=Inconsolata\ Medium\ 16<C-M>
+map <Leader>dark :colorscheme ir_black<C-M>
+map <Leader>blue :colorscheme darkblue<C-M>
 
 set lines=40
 set columns=80
