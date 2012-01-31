@@ -9,6 +9,9 @@ endif
 " map <F13> <C-\><C-N>:ScratchTab<CR>
 " map <F14> <C-\><C-N>:ScratchWindow<CR>
 " map <F15> <C-\><C-N>:CloseScratch<CR>
+" imap <F13> <C-\><C-N>:ScratchTab<CR>
+" imap <F14> <C-\><C-N>:ScratchWindow<CR>
+" imap <F15> <C-\><C-N>:CloseScratch<CR>
 
 let s:scratch_name = "--scratch--"
 let s:scratch_geometry = "vertical rightbelow 40"

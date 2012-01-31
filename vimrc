@@ -58,6 +58,12 @@ map <F6> <C-\><C-N>:CloseScratch<CR>
 map <F13> <C-\><C-N>:ScratchTab<CR>
 map <F14> <C-\><C-N>:ScratchWindow<CR>
 map <F15> <C-\><C-N>:CloseScratch<CR>
+imap <F4> <C-\><C-N>:ScratchTab<CR>
+imap <F5> <C-\><C-N>:ScratchWindow<CR>
+imap <F6> <C-\><C-N>:CloseScratch<CR>
+imap <F13> <C-\><C-N>:ScratchTab<CR>
+imap <F14> <C-\><C-N>:ScratchWindow<CR>
+imap <F15> <C-\><C-N>:CloseScratch<CR>
 
 "                         *** Languages ***
 "         *** C
