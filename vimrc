@@ -52,12 +52,12 @@ set statusline=(%n)\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 map <Leader>rus :so ~/.vim/scripts/text.vim<C-M>
 
 "                         *** Bindings ***
-map <F4> :ScratchTab<CR>
-map <F13> :ScratchTab<CR>
-map <F5> :OpenScratch<CR>
-map <F6> :CloseScratch<CR>
-map <F14> :OpenScratch<CR>
-map <F15> :CloseScratch<CR>
+map <F4> <C-\><C-N>:ScratchTab<CR>
+map <F5> <C-\><C-N>:ScratchWindow<CR>
+map <F6> <C-\><C-N>:CloseScratch<CR>
+map <F13> <C-\><C-N>:ScratchTab<CR>
+map <F14> <C-\><C-N>:ScratchWindow<CR>
+map <F15> <C-\><C-N>:CloseScratch<CR>
 
 "                         *** Languages ***
 "         *** C
