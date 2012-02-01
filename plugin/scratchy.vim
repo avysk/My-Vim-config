@@ -62,7 +62,7 @@ function OpenScratchTab()
         setlocal bufhidden=hide
         setlocal noswapfile
     endif
-    let t:is_scratch_tab=1
+    call setwinvar(0, "is_scratch_tab", 1)
 endfunction
 
 " Return back
@@ -73,7 +73,7 @@ endfunction
 
 " Open scratch tab if not there, go back if we're there
 function ToggleScratchTab()
-    if gettabvar(tabpagenr(), "is_scratch_tab")
+    if getwinvar(0, "is_scratch_tab")
         call JumpBack()
     else
         call OpenScratchTab()
@@ -82,7 +82,7 @@ endfunction
 
 " Open scratch window if we don't have one, close if we do
 function ToggleScratchWindow()
-    if gettabvar(tabpagenr(), "is_scratch_tab")
+    if gettabwinvar(tabpagenr(), 0, "is_scratch_tab")
         call JumpBack()
     else
         let l:win_num = bufwinnr(s:scratch_name)
