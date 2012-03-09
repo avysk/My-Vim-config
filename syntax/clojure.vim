@@ -306,6 +306,4 @@ endif
 
 delcommand HiLink
 
-hi Constant guifg=#00ccff
-hi PreProc guifg=#00ff00
 let b:current_syntax = "clojure"
