@@ -160,8 +160,8 @@ function GetClojureFold()
 endfunction
 
 function TurnOnClojureFolding()
-      setlocal foldexpr=GetClojureFold()
-      setlocal foldmethod=expr
+        setlocal foldexpr=GetClojureFold()
+        setlocal foldmethod=expr
 endfunction
 
 autocmd FileType clojure call TurnOnClojureFolding()
