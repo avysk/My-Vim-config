@@ -140,3 +140,8 @@ function TurnOnClojureFolding()
 endfunction
 
 autocmd FileType clojure call TurnOnClojureFolding()
+
+" Twitter
+if has ("python")
+        let twitvim_enable_python = 1
+endif
