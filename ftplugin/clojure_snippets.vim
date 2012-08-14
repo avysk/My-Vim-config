@@ -10,3 +10,5 @@ Snippet if (if <{}><{}><{}>
 Snippet wr (with-resources[<{}>]<{}>)
 
 Snippet TODO XXX(alexey): <{}>
+
+Snippet notyet (assert false "Not implemented")<{}>
