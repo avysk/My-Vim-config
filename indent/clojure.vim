@@ -201,6 +201,7 @@ setlocal lispwords+=do,doto,try,catch,locking,with-in-str,with-out-str,with-open
 setlocal lispwords+=dosync,with-local-vars,doseq,dorun,doall,->,->>,future
 setlocal lispwords+=with-bindings
 setlocal lispwords+=doseqpar,with-resources,testing
+setlocal lispwords+=doto-when
 
 " Namespaces:
 setlocal lispwords+=ns,clojure.core/ns

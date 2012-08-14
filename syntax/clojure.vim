@@ -50,7 +50,7 @@ if g:vimclojure#HighlightBuiltins != 0
 		\ "Macro":     "and or -> assert with-out-str with-in-str with-open "
 		\            . "locking destructure ns dosync binding delay "
 		\            . "lazy-cons lazy-cat time assert doc with-precision "
-		\            . "with-local-vars .. doto memfn proxy amap areduce "
+		\            . "with-local-vars .. doto doto-when memfn proxy amap areduce "
 		\            . "refer-clojure future lazy-seq letfn "
 		\            . "with-loading-context bound-fn extend extend-protocol "
 		\            . "extend-type reify with-bindings ->>",
