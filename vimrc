@@ -151,3 +151,6 @@ if has ("python")
         let twitvim_enable_python = 1
 endif
 let twitvim_count = 20
+
+" Autoremove fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
