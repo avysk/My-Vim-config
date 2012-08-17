@@ -49,7 +49,6 @@ set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
 set ruler
 set laststatus=2
 set showcmd
-set statusline=(%n)\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 
 
 
@@ -154,3 +153,14 @@ let twitvim_count = 20
 
 " Autoremove fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
+" More fugitive hacks
+function IsFugitive()
+    if stridx(bufname(""),"fugitive://") == 0
+        return "[!!!]"
+    else
+        return bufnr("")
+    endif
+endfunction
+
+
+set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
