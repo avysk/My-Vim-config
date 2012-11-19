@@ -165,7 +165,7 @@ function! GetClojureIndent()
 
 	normal! w
 	if paren[0] < line(".")
-		return paren[1] + &shiftwidth - 1
+		return paren[1] + &shiftwidth - 2
 	endif
 
 	normal! ge
