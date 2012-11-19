@@ -306,4 +306,8 @@ endif
 
 delcommand HiLink
 
+" Long lines highlight
+highlight LongLine ctermfg=white ctermbg=darkred guibg=#FFD9D9
+match LongLine /\%81v.*/
+
 let b:current_syntax = "clojure"

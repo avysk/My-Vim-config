@@ -32,7 +32,6 @@ set switchbuf=usetab,newtab
 map <Leader>bb :buf 
 map <Leader>vb :vertical sb 
 
-
 " Tabs
 set tabpagemax=20
 
@@ -49,8 +48,6 @@ set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
 set ruler
 set laststatus=2
 set showcmd
-
-
 
 "                         *** Settings for text in Russian ***
 map <Leader>rus :so ~/.vim/scripts/text.vim<C-M>
@@ -164,3 +161,4 @@ endfunction
 
 
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
+
