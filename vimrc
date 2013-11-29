@@ -88,11 +88,20 @@ autocmd FileType python setlocal shiftwidth=4
 
 "         *** OCaml
 let g:ocaml_folding=1
+let s:opam_share = substitute(system('opam config var share'), '\n', '', '')
+let s:ocp_indent = 'source ' . s:opam_share . '/typerex/ocp-indent/ocp-indent.vim'
 autocmd FileType ocaml iabbrev <buffer> _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
 autocmd FileType ocaml setlocal tw=0
 autocmd FileType ocaml setlocal softtabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2
-autocmd FileType ocaml source /Users/alexey/.opam/4.01.0/share/typerex/ocp-indent/ocp-indent.vim
+autocmd FileType ocaml exec s:ocp_indent
+
+let s:merlin_path_1 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vim'
+let s:merlin_path_2 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vimbufsync'
+
+" Broken for macvim
+"exec s:merlin_path_1
+"exec s:merlin_path_2
 
 "         *** Lisp
 let g:lisp_rainbow=1
