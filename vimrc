@@ -92,6 +92,7 @@ autocmd FileType ocaml iabbrev <buffer> _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
 autocmd FileType ocaml setlocal tw=0
 autocmd FileType ocaml setlocal softtabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2
+autocmd FileType ocaml source /Users/alexey/.opam/4.01.0/share/typerex/ocp-indent/ocp-indent.vim
 
 "         *** Lisp
 let g:lisp_rainbow=1
