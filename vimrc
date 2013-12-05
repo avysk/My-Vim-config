@@ -99,8 +99,8 @@ autocmd FileType ocaml setlocal softtabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2
 exec s:ocp_indent
 
-let s:merlin_path_1 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vim'
-let s:merlin_path_2 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vimbufsync'
+"let s:merlin_path_1 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vim'
+"let s:merlin_path_2 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vimbufsync'
 
 " Broken for macvim
 " exec s:merlin_path_1
