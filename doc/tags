@@ -20,6 +20,7 @@
 :Cligs	twitvim.txt	/*:Cligs*
 :DMSentTwitter	twitvim.txt	/*:DMSentTwitter*
 :DMTwitter	twitvim.txt	/*:DMTwitter*
+:DeleteLoginTwitter	twitvim.txt	/*:DeleteLoginTwitter*
 :DisableRetweetsTwitter	twitvim.txt	/*:DisableRetweetsTwitter*
 :DocIndex	haskellmode.txt	/*:DocIndex*
 :DocSettings	haskellmode.txt	/*:DocSettings*
@@ -153,6 +154,7 @@ TwitVim-LongURL	twitvim.txt	/*TwitVim-LongURL*
 TwitVim-OAuth	twitvim.txt	/*TwitVim-OAuth*
 TwitVim-OAuth-Consumer	twitvim.txt	/*TwitVim-OAuth-Consumer*
 TwitVim-OpenSSL	twitvim.txt	/*TwitVim-OpenSSL*
+TwitVim-StatusNet	twitvim.txt	/*TwitVim-StatusNet*
 TwitVim-add	twitvim.txt	/*TwitVim-add*
 TwitVim-buffers	twitvim.txt	/*TwitVim-buffers*
 TwitVim-cURL	twitvim.txt	/*TwitVim-cURL*
@@ -167,7 +169,6 @@ TwitVim-hide-header	twitvim.txt	/*TwitVim-hide-header*
 TwitVim-highlight	twitvim.txt	/*TwitVim-highlight*
 TwitVim-history	twitvim.txt	/*TwitVim-history*
 TwitVim-hotkeys	twitvim.txt	/*TwitVim-hotkeys*
-TwitVim-identica	twitvim.txt	/*TwitVim-identica*
 TwitVim-inreplyto	twitvim.txt	/*TwitVim-inreplyto*
 TwitVim-install	twitvim.txt	/*TwitVim-install*
 TwitVim-intro	twitvim.txt	/*TwitVim-intro*
@@ -357,6 +358,7 @@ twitvim_enable_ruby	twitvim.txt	/*twitvim_enable_ruby*
 twitvim_enable_tcl	twitvim.txt	/*twitvim_enable_tcl*
 twitvim_filter_enable	twitvim.txt	/*twitvim_filter_enable*
 twitvim_filter_regex	twitvim.txt	/*twitvim_filter_regex*
+twitvim_force_ssl	twitvim.txt	/*twitvim_force_ssl*
 twitvim_login	twitvim.txt	/*twitvim_login*
 twitvim_login_b64	twitvim.txt	/*twitvim_login_b64*
 twitvim_net_timeout	twitvim.txt	/*twitvim_net_timeout*
