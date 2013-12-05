@@ -67,8 +67,11 @@ imap <F14> <C-\><C-N>:ScratchWindow<CR>
 imap <F15> <C-\><C-N>:CloseScratch<CR>
 
 "                         *** Languages ***
-"         *** C
 
+"         *** INTERCAL
+au BufRead,BufNewFile *.i set syntax=intercal
+
+"         *** C
 set cino=:0
 
 "         *** FORTRAN
@@ -169,4 +172,3 @@ endfunction
 
 
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
-
