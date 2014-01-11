@@ -67,8 +67,11 @@ imap <F14> <C-\><C-N>:ScratchWindow<CR>
 imap <F15> <C-\><C-N>:CloseScratch<CR>
 
 "                         *** Languages ***
-"         *** C
 
+"         *** INTERCAL
+au BufRead,BufNewFile *.i set syntax=intercal
+
+"         *** C
 set cino=:0
 
 "         *** FORTRAN
@@ -96,8 +99,8 @@ autocmd FileType ocaml setlocal softtabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2
 exec s:ocp_indent
 
-let s:merlin_path_1 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vim'
-let s:merlin_path_2 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vimbufsync'
+"let s:merlin_path_1 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vim'
+"let s:merlin_path_2 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vimbufsync'
 
 " Broken for macvim
 " exec s:merlin_path_1
@@ -179,4 +182,3 @@ endfunction
 
 
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
-
