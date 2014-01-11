@@ -163,12 +163,6 @@ endfunction
 
 autocmd FileType clojure call TurnOnClojureFolding()
 
-" Twitter
-if has ("python")
-        let twitvim_enable_python = 1
-endif
-let twitvim_count = 20
-
 " Autoremove fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 " More fugitive hacks
@@ -180,5 +174,5 @@ function IsFugitive()
     endif
 endfunction
 
-
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
+
