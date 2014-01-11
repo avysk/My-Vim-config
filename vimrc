@@ -101,10 +101,10 @@ exec s:ocp_indent
 
 let s:merlin_path_1 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vim'
 let s:merlin_path_2 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vimbufsync'
-
-" Broken for macvim
 exec s:merlin_path_1
 exec s:merlin_path_2
+" use merlin for syntastic
+let g:syntastic_ocaml_checkers = ['merlin']
 
 "         *** Lisp
 let g:lisp_rainbow=1
