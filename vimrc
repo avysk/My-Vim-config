@@ -176,3 +176,4 @@ endfunction
 
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 
+set wildmode=longest,list
