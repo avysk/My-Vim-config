@@ -91,18 +91,16 @@ autocmd FileType python setlocal shiftwidth=4
 
 "         *** OCaml
 let g:ocaml_folding=1
-let s:opam_share = substitute(system('opam config var share'), '\n', '', '')
-let s:ocp_indent = 'source ' . s:opam_share . '/vim/syntax/ocp-indent.vim'
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+let s:ocp_indent = 'source ' . g:opamshare . '/vim/syntax/ocp-indent.vim'
 autocmd FileType ocaml iabbrev <buffer> _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
 autocmd FileType ocaml setlocal tw=0
 autocmd FileType ocaml setlocal softtabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2
 exec s:ocp_indent
 
-let s:merlin_path_1 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vim'
-let s:merlin_path_2 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vimbufsync'
-exec s:merlin_path_1
-exec s:merlin_path_2
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
 " use merlin for syntastic
 let g:syntastic_ocaml_checkers = ['merlin']
 
