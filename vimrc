@@ -91,77 +91,23 @@ autocmd FileType python setlocal shiftwidth=4
 
 "         *** OCaml
 let g:ocaml_folding=1
-let s:opam_share = substitute(system('opam config var share'), '\n', '', '')
-let s:ocp_indent = 'source ' . s:opam_share . '/vim/syntax/ocp-indent.vim'
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+let s:ocp_indent = 'source ' . g:opamshare . '/vim/syntax/ocp-indent.vim'
 autocmd FileType ocaml iabbrev <buffer> _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
 autocmd FileType ocaml setlocal tw=0
 autocmd FileType ocaml setlocal softtabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2
 exec s:ocp_indent
 
-let s:merlin_path_1 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vim'
-let s:merlin_path_2 = 'set rtp+=' . s:opam_share . '/ocamlmerlin/vimbufsync'
-exec s:merlin_path_1
-exec s:merlin_path_2
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
 " use merlin for syntastic
 let g:syntastic_ocaml_checkers = ['merlin']
 
 "         *** Lisp
 let g:lisp_rainbow=1
 
-"         *** Clojure
-let g:vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
-let g:vimclojure#ParenRainbow=1           " Rainbow parentheses'!
-
-" ---------------------------------------------------------------------------
-" Automagic Clojure folding on defn's and defmacro's
-"
-function GetClojureFold()
-        "     if getline(v:lnum) =~ '^\s*(defn.*\s'
-        "            return ">1"
-        "      elseif getline(v:lnum) =~ '^\s*(defmacro.*\s'
-        "            return ">1"
-        "      elseif getline(v:lnum) =~ '^\s*(defmethod.*\s'
-        "            return ">1"
-        if getline(v:lnum) =~ '^(def'
-                return ">1"
-        elseif getline(v:lnum) =~ '^(ns\s'
-                return ">1"
-        elseif getline(v:lnum) =~ '^\s*$'
-                let my_cljnum = v:lnum
-                let my_cljmax = line("$")
-
-                while (1)
-                        let my_cljnum = my_cljnum + 1
-                        if my_cljnum > my_cljmax
-                                return "<1"
-                        endif
-
-                        let my_cljdata = getline(my_cljnum)
-
-                        " If we match an empty line, stop folding
-                        "if my_cljdata =~ '^$'
-                        if my_cljdata =~ '^('
-                                "return "<1"
-                                return 0
-                        elseif my_cljdata =~ '^;'
-                        " Stop folding on top-level comments
-                                return 0
-                        else
-                                return "="
-                        endif
-                endwhile
-        else
-                return "="
-        endif
-endfunction
-
-function TurnOnClojureFolding()
-        setlocal foldexpr=GetClojureFold()
-        setlocal foldmethod=expr
-endfunction
-
-autocmd FileType clojure call TurnOnClojureFolding()
+"         *** Git
 
 " Autoremove fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
