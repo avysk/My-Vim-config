@@ -122,4 +122,5 @@ endfunction
 
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 
+"       *** Vimoutliner
 autocmd FileType vo_base set listchars=tab:\ \ ,trail:∴,extends:→,precedes:←,nbsp:·

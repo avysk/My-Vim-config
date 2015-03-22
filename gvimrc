@@ -1,7 +1,7 @@
 if has("gui_macvim")
         set background=light
         colorscheme macvim
-        set guifont=Menlo:h16.00
+        set guifont=Menlo:h12.00
         set columns=164
         set lines=50
         set fuoptions=maxvert,maxhorz
