@@ -82,9 +82,6 @@ let fortran_fold_multilinecomments=1
 let fortran_more_precise=1
 let fortran_do_enddo=1
 
-"         *** Scheme
-autocmd Filetype scheme source ~/.vim/ftplugin/SchemeMode.vim
-
 "         *** Python
 autocmd FileType python setlocal softtabstop=4
 autocmd FileType python setlocal shiftwidth=4
