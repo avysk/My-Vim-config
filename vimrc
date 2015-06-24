@@ -122,3 +122,6 @@ set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 
 "       *** Vimoutliner
 autocmd FileType votl set listchars=tab:\ \ ,trail:∴,extends:→,precedes:←,nbsp:·
+
+"       *** Scala
+au BufRead,BufNewFile *.sc set filetype=scala
