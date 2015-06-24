@@ -1,9 +1,13 @@
 #!/bin/sh
-if [ -e ~/.vimrc ] ; then
+if [ -f ~/.vimrc ] ; then
 	mv ~/.vimrc ~/.vimrc.old
 fi
-if [ -e ~/.gvimrc ] ; then
+if [ -f ~/.gvimrc ] ; then
 	mv ~/.gvimrc ~/.gvimrc.old
 fi
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
+if [ -f ~/.inputrc ] ; then
+	mv ~/.inputrc ~/.inputrc.old
+fi
+ln -sf ~/.vim/vimrc ~/.vimrc
+ln -sf ~/.vim/gvimrc ~/.gvimrc
+ln -sf ~/.vim/inputrc ~/.inputrc
