@@ -49,10 +49,10 @@ set ruler
 set laststatus=2
 set showcmd
 
-"                         *** Settings for text in Russian ***
-map <Leader>rus :so ~/.vim/scripts/text.vim<C-M>
-
 "                         *** Bindings ***
+" text in Russian
+map <Leader>rus :so ~/.vim/scripts/text.vim<C-M>
+" scratch
 map <F4> <C-\><C-N>:ScratchTab<CR>
 map <F5> <C-\><C-N>:ScratchWindow<CR>
 map <F6> <C-\><C-N>:CloseScratch<CR>
