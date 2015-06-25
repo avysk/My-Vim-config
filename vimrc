@@ -128,3 +128,6 @@ autocmd FileType votl set listchars=tab:\ \ ,trail:∴,extends:→,precedes:←,
 
 "       *** Scala
 au BufRead,BufNewFile *.sc set filetype=scala
+
+"       *** VimWiki
+let g:vimwiki_list = [{'path': '~/OneDrive/vimwiki'}]
