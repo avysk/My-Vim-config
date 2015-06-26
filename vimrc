@@ -12,6 +12,7 @@ set backspace=indent,eol,start
 set noequalalways
 set expandtab
 set showmatch
+set hidden " Use hidden buffers liberally
 set path+=** " Search in all subdirectories
 
 " Remember marks in 20 last files
