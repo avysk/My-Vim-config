@@ -11,7 +11,7 @@ setlocal autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2
 setlocal textwidth=78 colorcolumn=80 wrap formatoptions=tcqn
 setlocal formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\\|^\\s*<\\d\\+>\\s\\+\\\\|^\\s*[a-zA-Z.]\\.\\s\\+\\\\|^\\s*[ivxIVX]\\+\\.\\s\\+
 setlocal comments=s1:/*,ex:*/,://,b:#,:%,:XCOMM,fb:-,fb:*,fb:+,fb:.,fb:>
-setlocal spellfile=~/.vim/spell/my.utf-8.add
+"setlocal spellfile=~/.vim/spell/my.utf-8.add
 setlocal spell
 setlocal spelllang=en_us
 setlocal linebreak

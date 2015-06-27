@@ -1,2 +1,4 @@
 view/
 .netrwhist
+spell/*.spl
+spell/*.sug

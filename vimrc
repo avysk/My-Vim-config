@@ -52,7 +52,9 @@ set showcmd
 
 "                         *** Bindings ***
 " text in Russian
-map <Leader>rus :so ~/.vim/scripts/text.vim<C-M>
+map <Leader>rus :so ~/.vim/scripts/rus_text.vim<C-M>
+" text in Engling
+map <Leader>eng :so ~/.vim/scripts/eng_text.vim<C-M>
 " scratch
 map <F4> <C-\><C-N>:ScratchTab<CR>
 map <F5> <C-\><C-N>:ScratchWindow<CR>

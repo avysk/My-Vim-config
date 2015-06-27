@@ -1,6 +1,6 @@
-setlocal spellfile=~/.vim/spell/my.utf-8.add
+setlocal spellfile=~/.vim/spell/my.eng.utf-8.add
 setlocal spell
-setlocal spelllang=ru_yo
+setlocal spelllang=en_gb
 setlocal nolist
 setlocal linebreak
 
@@ -12,3 +12,5 @@ map <buffer> <Down> gj
 map <buffer> <Up> gk
 imap <buffer> <Down> <C-o>gj
 imap <buffer> <Up> <C-o>gk
+
+so ~/.vim/scripts/iawriter_theme.vim
