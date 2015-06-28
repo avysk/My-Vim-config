@@ -1,6 +1,6 @@
-setlocal spellfile=~/.vim/spell/ru.utf-8.add
 setlocal spell
 setlocal spelllang=ru_yo
+setlocal spellfile=~/.vim/spell/ru.utf-8.add
 setlocal nolist
 setlocal linebreak
 

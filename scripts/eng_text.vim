@@ -1,6 +1,6 @@
-setlocal spellfile=~/.vim/spell/my.eng.utf-8.add
 setlocal spell
 setlocal spelllang=en_gb
+setlocal spellfile=~/.vim/spell/my.eng.utf-8.add
 setlocal nolist
 setlocal linebreak
 
