@@ -1,7 +1,7 @@
+colorscheme iawriter
+set background=light
 if has("gui_running")
-        colorscheme iawriter
         set linespace=5
-        set background=light
         if has("gui_gtk2")
                 " On my Ubuntu machine this does not work;
                 " set guifont=Whatever happily uses some default font
