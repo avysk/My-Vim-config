@@ -1,0 +1,15 @@
+diff --git a/bundle/vim-iawriter/colors/iawriter.vim b/bundle/vim-iawriter/colors/iawriter.vim
+index 56e6f01..8effed1 100755
+--- a/bundle/vim-iawriter/colors/iawriter.vim
++++ b/bundle/vim-iawriter/colors/iawriter.vim
+@@ -53,8 +53,8 @@ hi ShowPairsHLe               guibg=#ff5555                           ctermbg=re
+ if version >= 700
+   hi MatchParen               guibg=#c4ffc4                                             ctermbg=lightgreen
+   " Spell
+-  hi SpellBad   guifg=#cc0000               gui=undercurl guisp=#cc0000 ctermfg=red                        cterm=underline
+-  hi SpellRare  guifg=magenta               gui=undercurl               ctermfg=magenta                    cterm=underline
++  hi SpellBad   guifg=#cc0000               gui=undercurl guisp=#cc0000 ctermfg=red     ctermbg=white      cterm=underline
++  hi SpellRare  guifg=magenta               gui=undercurl               ctermfg=magenta ctermbg=white      cterm=underline
+   hi SpellCap                               gui=undercurl guisp=#22cc22                                    cterm=underline
+   " Completion menu
+   hi Pmenu                    guibg=#ffffcc                                             ctermbg=yellow
