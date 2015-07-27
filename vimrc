@@ -132,7 +132,7 @@ autocmd FileType votl set listchars=tab:\ \ ,trail:∴,extends:→,precedes:←,
 au BufRead,BufNewFile *.sc set filetype=scala
 
 "       *** VimWiki
-let g:vimwiki_list = [{'path': '~/OneDrive/vimwiki'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
