@@ -16,3 +16,18 @@
 [submodule "bundle/ocp-indent"]
 	path = bundle/ocp-indent
 	url = git@github.com:def-lkb/ocp-indent-vim.git
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
+[submodule "bundle/vim-iawriter"]
+	path = bundle/vim-iawriter
+	url = git@github.com:jacekd/vim-iawriter.git
+[submodule "bundle/vimoutliner"]
+	path = bundle/vimoutliner
+	url = https://github.com/vimoutliner/vimoutliner.git
+[submodule "bundle/vimwiki"]
+	path = bundle/vimwiki
+	url = git@github.com:vimwiki/vimwiki.git
