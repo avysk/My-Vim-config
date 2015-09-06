@@ -134,6 +134,9 @@ au BufRead,BufNewFile *.sc set filetype=scala
 "       *** VimWiki
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
 
+"       *** Ultisnips
+let g:UltiSnipsEditSplit="vertical"
+
 " KEEP THOSE AT THE BOTTOM
 syntax on
 filetype plugin on
