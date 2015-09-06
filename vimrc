@@ -138,3 +138,4 @@ let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
 syntax on
 filetype plugin on
 filetype indent on
+let g:typescript_use_builtin_tagbar_defs=1
