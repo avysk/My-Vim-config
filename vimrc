@@ -33,6 +33,9 @@ map <Leader>vb :vertical sb
 " Tabs
 set tabpagemax=20
 
+" Relative line numbers
+set rnu
+
 "                        *** Decorations ***
 "set listchars=
 set list
