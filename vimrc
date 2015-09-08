@@ -70,6 +70,34 @@ nmap <F12> :TagbarToggle<CR>
 " Dash.app
 nmap <silent> <F2> <Plug>DashSearch
 
+
+"                        *** Plugins settings ***
+
+"       *** Ultisnips
+let g:UltiSnipsEditSplit="vertical"
+
+"       *** VimWiki
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
+
+"         *** Git
+" Autoremove fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
+" More fugitive hacks
+function IsFugitive()
+    if stridx(bufname(""),"fugitive://") == 0
+        return "[!!!]"
+    else
+        return bufnr("")
+    endif
+endfunction
+
+set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
+
+"       *** Vimoutliner
+autocmd FileType votl set listchars=tab:\ \ ,trail:∴,extends:→,precedes:←,nbsp:·
+
+
+
 "                         *** Languages ***
 
 "         *** INTERCAL
@@ -110,32 +138,12 @@ let g:syntastic_ocaml_checkers = ['merlin']
 "         *** Lisp
 let g:lisp_rainbow=1
 
-"         *** Git
-
-" Autoremove fugitive buffers
-autocmd BufReadPost fugitive://* set bufhidden=delete
-" More fugitive hacks
-function IsFugitive()
-    if stridx(bufname(""),"fugitive://") == 0
-        return "[!!!]"
-    else
-        return bufnr("")
-    endif
-endfunction
-
-set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
-
-"       *** Vimoutliner
-autocmd FileType votl set listchars=tab:\ \ ,trail:∴,extends:→,precedes:←,nbsp:·
-
-"       *** Scala
+"         *** Scala
 au BufRead,BufNewFile *.sc set filetype=scala
 
-"       *** VimWiki
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
+"         *** Javascript
+let g:syntastic_javascript_jslint_args = "--white"
 
-"       *** Ultisnips
-let g:UltiSnipsEditSplit="vertical"
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
