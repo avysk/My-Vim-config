@@ -80,7 +80,8 @@ nmap <silent> <F2> <Plug>DashSearch
 let g:UltiSnipsEditSplit="vertical"
 
 "       *** VimWiki
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'list_margin': 2}, {'path': '~/vimwiki', 'list_margin': 2}]
+nmap <leader>tt <Plug>VimwikiToggleListItem
 
 "         *** Git
 " Autoremove fugitive buffers
@@ -146,6 +147,9 @@ au BufRead,BufNewFile *.sc set filetype=scala
 
 "         *** Javascript
 let g:syntastic_javascript_jslint_args = "--white"
+
+"         *** Julia
+let g:latex_to_unicode_auto = 1
 
 
 " KEEP THOSE AT THE BOTTOM
