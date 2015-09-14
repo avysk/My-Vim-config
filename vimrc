@@ -13,7 +13,6 @@ set hidden " Use hidden buffers liberally
 set path+=** " Search in all subdirectories
 
 set hlsearch
-nmap <silent> <BS> :nohlsearch<CR>
 
 " Remember marks in 20 last files
 " Remember up to 1000 lines per register
