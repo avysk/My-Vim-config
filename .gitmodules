@@ -55,3 +55,6 @@
 [submodule "bundle/julia-vim"]
 	path = bundle/julia-vim
 	url = git://github.com/JuliaLang/julia-vim.git
+[submodule "bundle/lusty"]
+	path = bundle/lusty
+	url = git@github.com:sjbach/lusty.git

@@ -78,6 +78,10 @@ nmap <silent> <F2> <Plug>DashSearch
 
 "                        *** Plugins settings ***
 
+"       *** Lusty explorer
+" Silence message about non-available Ruby
+let g:LustyJugglerSuppressRubyWarning = 1
+
 "       *** Ultisnips
 let g:UltiSnipsEditSplit="vertical"
 
