@@ -11,6 +11,7 @@ set expandtab
 set showmatch
 set hidden " Use hidden buffers liberally
 set path+=** " Search in all subdirectories
+set wildmode=list:longest
 
 set hlsearch
 
