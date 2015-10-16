@@ -19,6 +19,13 @@ set hlsearch
 " Remember up to 1000 lines per register
 set viminfo='20,<1000
 
+" Permanent undo
+if has('persistent_undo')
+    set undofile
+    set undodir=$HOME/.vim_undo_files
+    set undolevels=5000
+endif
+
 " Search options
 set ignorecase
 set smartcase
