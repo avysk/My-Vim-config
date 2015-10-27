@@ -123,8 +123,9 @@ au BufRead,BufNewFile *.i set syntax=intercal
 
 "         *** C
 set cino=:0
-" use clang for syntastic
-let g:syntastic_c_compiler = 'clang'
+" use gcc for syntastic
+let g:syntastic_c_compiler = 'gcc'
+let g:syntastic_c_compiler_options = '-std=gnu99 -Wall -I/opt/local/include'
 
 "         *** FORTRAN
 let fortran_free_source=1
