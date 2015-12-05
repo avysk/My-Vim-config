@@ -58,6 +58,6 @@
 [submodule "bundle/lusty"]
 	path = bundle/lusty
 	url = git@github.com:sjbach/lusty.git
-[submodule "/Users/alexey/.vim/bundle/vim-elixir"]
-	path = /Users/alexey/.vim/bundle/vim-elixir
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
