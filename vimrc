@@ -2,18 +2,24 @@
 call pathogen#infect()
 
 "                        *** Please behave ***
-set nocp
+set nocompatible
+
+" Use space for leader
+nnoremap <Space> <Nop>
+nmap <Space> <Leader>
+
+set backspace=indent,eol,start
+set expandtab
+
 set modeline
 set modelines=5
-set backspace=indent,eol,start
-set noequalalways
-set expandtab
-set showmatch
-set hidden " Use hidden buffers liberally
-set path+=** " Search in all subdirectories
-set wildmode=list:longest
 
-set hlsearch
+set path+=** " Search in all subdirectories
+
+set showmatch
+set noequalalways
+set wildmode=list:longest
+set relativenumber
 
 " Remember marks in 20 last files
 " Remember up to 1000 lines per register
@@ -30,12 +36,14 @@ endif
 set ignorecase
 set smartcase
 set incsearch
+set hlsearch
 
 " Folding
 set foldenable
 set foldmethod=syntax
 
 " Buffers
+set hidden " Use hidden buffers liberally
 set switchbuf=usetab,newtab
 map <Leader>bb :buf 
 map <Leader>vb :vertical sb 
@@ -43,8 +51,6 @@ map <Leader>vb :vertical sb
 " Tabs
 set tabpagemax=20
 
-" Relative line numbers
-set rnu
 
 "                        *** Decorations ***
 "set listchars=
@@ -166,9 +172,10 @@ let g:syntastic_javascript_jslint_args = "--white"
 "         *** Julia
 let g:latex_to_unicode_auto = 1
 
+"         *** Typescript
+let g:typescript_use_builtin_tagbar_defs=1
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
 filetype plugin on
 filetype indent on
-let g:typescript_use_builtin_tagbar_defs=1
