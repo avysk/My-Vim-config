@@ -100,7 +100,9 @@ let g:LustyJugglerSuppressRubyWarning = 1
 let g:UltiSnipsEditSplit="vertical"
 
 "       *** VimWiki
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'list_margin': 2}, {'path': '~/vimwiki', 'list_margin': 2}]
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'list_margin': 2},
+                    \ {'path': '~/vimwiki', 'list_margin': 2},
+                    \ {'path': '~/Dropbox/vimwiki-md', 'list_margin': 2, 'syntax': 'markdown', 'ext': '.md'}]
 nmap <leader>tt <Plug>VimwikiToggleListItem
 
 "         *** Git
