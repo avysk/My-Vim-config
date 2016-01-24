@@ -178,6 +178,12 @@ let g:latex_to_unicode_auto = 1
 "         *** Typescript
 let g:typescript_use_builtin_tagbar_defs=1
 
+"         *** Ruby
+autocmd FileType ruby setlocal softtabstop=2
+autocmd FileType ruby setlocal shiftwidth=2
+autocmd FileType ruby setlocal makeprg=rake\ -s
+let g:syntastic_ruby_checkers=['rubocop', 'mri']
+
 " KEEP THOSE AT THE BOTTOM
 syntax on
 filetype plugin on
