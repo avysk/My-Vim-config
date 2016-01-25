@@ -181,8 +181,12 @@ let g:typescript_use_builtin_tagbar_defs=1
 "         *** Ruby
 autocmd FileType ruby setlocal softtabstop=2
 autocmd FileType ruby setlocal shiftwidth=2
-autocmd FileType ruby setlocal makeprg=rake\ -s
+"autocmd FileType ruby setlocal makeprg=rake\ -s
+autocmd FileType ruby compiler rspec
 let g:syntastic_ruby_checkers=['rubocop', 'mri']
+" let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
