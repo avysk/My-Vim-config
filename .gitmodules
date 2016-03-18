@@ -53,9 +53,6 @@
 [submodule "bundle/julia-vim"]
 	path = bundle/julia-vim
 	url = git://github.com/JuliaLang/julia-vim.git
-[submodule "bundle/lusty"]
-	path = bundle/lusty
-	url = git@github.com:sjbach/lusty.git
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
