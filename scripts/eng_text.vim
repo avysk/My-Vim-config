@@ -1,6 +1,6 @@
 setlocal spell
 setlocal spelllang=en_gb
-setlocal spellfile=~/.vim/spell/my.eng.utf-8.add
+setlocal spellfile=~/vimfiles/spell/my.eng.utf-8.add
 setlocal nolist
 setlocal linebreak
 
@@ -16,4 +16,4 @@ imap <buffer> <Up> <C-o>gk
 " Fix the preivous spelling mistake in insert mode with C-l
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
-so ~/.vim/scripts/iawriter_theme.vim
+so ~/vimfiles/scripts/iawriter_theme.vim
