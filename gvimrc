@@ -27,5 +27,5 @@ map <Leader>blue :colorscheme darkblue<C-M>
 "set columns=80
 
 " I always want this in gui
-set list
-set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
+"set list
+"set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·

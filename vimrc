@@ -55,13 +55,13 @@ set tabpagemax=20
 
 "                        *** Decorations ***
 "set listchars=
-set list
-set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
+"set list
+"set listchars=tab:¿¿,trail:¿,extends:¿,precedes:¿,nbsp:·
 "if ($TERM=="screen")
 "        set nolist
 "else
 "        set list
-"        set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
+"        set listchars=tab:¿¿,trail:¿,extends:¿,precedes:¿,nbsp:·
 "endif
 set ruler
 set laststatus=2
@@ -122,7 +122,7 @@ endfunction
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 
 "       *** Vimoutliner
-autocmd FileType votl set listchars=tab:\ \ ,trail:∴,extends:→,precedes:←,nbsp:·
+autocmd FileType votl set listchars=tab:\ \ ,trail:¿,extends:¿,precedes:¿,nbsp:·
 
 
 
@@ -149,21 +149,6 @@ let fortran_do_enddo=1
 autocmd FileType python setlocal softtabstop=4
 autocmd FileType python setlocal shiftwidth=4
 let g:syntastic_python_checkers=['pep8', 'pylint', 'python']
-
-"         *** OCaml
-let g:ocaml_folding=1
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-"let s:ocp_indent = 'source ' . g:opamshare . '/vim/syntax/ocp-indent.vim'
-autocmd FileType ocaml iabbrev <buffer> _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
-autocmd FileType ocaml setlocal tw=0
-autocmd FileType ocaml setlocal softtabstop=2
-autocmd FileType ocaml setlocal shiftwidth=2
-"autocmd FileType ocaml exec s:ocp_indent
-
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
-
-" use merlin for syntastic
-let g:syntastic_ocaml_checkers = ['merlin']
 
 "         *** Lisp
 let g:lisp_rainbow=1
