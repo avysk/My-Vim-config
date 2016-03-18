@@ -47,9 +47,6 @@
 [submodule "bundle/javascript-libraries-syntax"]
 	path = bundle/javascript-libraries-syntax
 	url = https://github.com/othree/javascript-libraries-syntax.vim
-[submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
-	url = git@github.com:SirVer/ultisnips.git
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = git@github.com:honza/vim-snippets.git
