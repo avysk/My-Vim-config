@@ -179,3 +179,6 @@ let g:rubycomplete_classes_in_global = 1
 syntax on
 filetype plugin on
 filetype indent on
+
+set encoding=utf-8
+set fileencoding=utf-8
