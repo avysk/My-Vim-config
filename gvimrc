@@ -8,6 +8,7 @@ if has("gui_macvim")
         set fuoptions=maxvert,maxhorz
         " The IM behaviour is too strange for my taste so
         set imdisable
+        map <Leader>font :set guifont=Cousine:h16<C-M>
 endif
 
 if has("gui_gtk2")
@@ -16,9 +17,9 @@ if has("gui_gtk2")
         set guifont=Liberation\ Mono\ 14
         set guioptions=aegimrLt
         set guioptions=aci
+        map <Leader>font :set guifont=Inconsolata\ Medium\ 16<C-M>
 endif
 
-map <Leader>font :set guifont=Inconsolata\ Medium\ 16<C-M>
 map <Leader>dark :colorscheme ir_black<C-M>
 map <Leader>blue :colorscheme darkblue<C-M>
 
