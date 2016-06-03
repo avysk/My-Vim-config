@@ -1,3 +1,5 @@
+language C
+
 if has("gui_macvim")
         set background=light
         colorscheme macvim
