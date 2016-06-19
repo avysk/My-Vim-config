@@ -9,4 +9,4 @@ ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 
 echo "Run git submodule init; git submodule update"
-echo "Then run make in ~/.vim/bundle/vimproc"
+echo "Then run make in ~/.vim/bundle/vimproc and in ~/.vim/bundle/lusty"
