@@ -68,3 +68,6 @@
 [submodule "bundle/vim-fsharp"]
 	path = bundle/vim-fsharp
 	url = https://github.com/fsharp/vim-fsharp.git
+[submodule "bundle/vim-pathogen"]
+	path = bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
