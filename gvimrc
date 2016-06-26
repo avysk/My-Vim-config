@@ -14,7 +14,7 @@ endif
 if has("gui_gtk2")
         colorscheme darkblue
         "colorscheme ir_black
-        set guifont=Liberation\ Mono\ 14
+        set guifont=Cousine\ 11
         set guioptions=aegimrLt
         set guioptions=aci
         map <Leader>font :set guifont=Inconsolata\ Medium\ 16<C-M>
