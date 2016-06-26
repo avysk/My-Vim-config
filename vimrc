@@ -1,3 +1,5 @@
+language C
+
 "                         *** Pathogen -- set runtime path ***
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
