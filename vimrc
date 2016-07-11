@@ -90,6 +90,16 @@ nmap <F12> :TagbarToggle<CR>
 " Dash.app
 nmap <silent> <F2> <Plug>DashSearch
 
+" Right/Left to move through location list (e.g. Syntastic errors)
+nnoremap <Right> :lnext<CR>
+nnoremap <Left> :lprev<CR>
+inoremap <Right> <C-O>:lnext<CR>
+inoremap <Left> <C-O>:lprev<CR>
+" PgDown to drop search highlighting
+nnoremap <PageDown> :nohl<CR>
+inoremap <PageDown> <C-O>:nohl<CR>
+" PgUp to go to alternate file
+nnoremap <PageUp> <C-^>
 
 "                        *** Plugins settings ***
 
@@ -120,6 +130,9 @@ function IsFugitive()
 endfunction
 
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
+
+"       *** Syntastic
+let g:syntastic_always_populate_loc_list = 1
 
 "       *** Vimoutliner
 autocmd FileType votl set listchars=tab:\ \ ,trail:∴,extends:→,precedes:←,nbsp:·
