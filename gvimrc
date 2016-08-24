@@ -3,7 +3,8 @@ language C
 if has("gui_macvim")
         set background=light
         colorscheme macvim
-        set guifont=Menlo:h12.00
+        set macligatures
+        set guifont=Fira\ Code\ Retina:h14
         set columns=164
         set lines=50
         set guioptions-=r

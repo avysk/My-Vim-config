@@ -92,6 +92,16 @@ nmap <F12> :TagbarToggle<CR>
 " Dash.app
 nmap <silent> <F2> <Plug>DashSearch
 
+" Right/Left to move through location list (e.g. Syntastic errors)
+nnoremap <Right> :lnext<CR>
+nnoremap <Left> :lprev<CR>
+inoremap <Right> <C-O>:lnext<CR>
+inoremap <Left> <C-O>:lprev<CR>
+" PgDown to drop search highlighting
+nnoremap <PageDown> :nohl<CR>
+inoremap <PageDown> <C-O>:nohl<CR>
+" PgUp to go to alternate file
+nnoremap <PageUp> <C-^>
 
 "                        *** Plugins settings ***
 
@@ -122,6 +132,9 @@ function IsFugitive()
 endfunction
 
 set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
+
+"       *** Syntastic
+let g:syntastic_always_populate_loc_list = 1
 
 "       *** Vimoutliner
 autocmd FileType votl set listchars=tab:\ \ ,trail:¿,extends:¿,precedes:¿,nbsp:·
@@ -175,6 +188,10 @@ autocmd FileType ruby compiler rspec
 let g:syntastic_ruby_checkers=['rubocop', 'mri']
 " let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
+
+"         *** Rust
+let g:racer_cmd=$HOME . "/.cargo/bin/racer"
+let $RUST_SRC_PATH=$HOME . "/Projects/External/rustc-1.10.0/src/"
 
 
 " KEEP THOSE AT THE BOTTOM
