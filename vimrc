@@ -173,6 +173,8 @@ au BufRead,BufNewFile *.sc set filetype=scala
 
 "         *** Javascript
 let g:syntastic_javascript_jslint_args = "--white"
+" ...and jsx extensions
+let g:jsx_ext_required = 0
 
 "         *** Julia
 let g:latex_to_unicode_auto = 1
