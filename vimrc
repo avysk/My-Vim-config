@@ -93,8 +93,6 @@ nmap <silent> <F2> <Plug>DashSearch
 " Right/Left to move through location list (e.g. Syntastic errors)
 nnoremap <Right> :lnext<CR>
 nnoremap <Left> :lprev<CR>
-inoremap <Right> <C-O>:lnext<CR>
-inoremap <Left> <C-O>:lprev<CR>
 " PgDown to drop search highlighting
 nnoremap <PageDown> :nohl<CR>
 inoremap <PageDown> <C-O>:nohl<CR>
@@ -109,6 +107,11 @@ let g:LustyJugglerSuppressRubyWarning = 1
 
 "       *** Ultisnips
 let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger="<Right>"
+let g:UltiSnipsListSnippets="<Left>"
+let g:UltiSnipsJumpForwardTrigger="<Down>"
+let g:UltiSnipsJumpBackwardTrigger="<Up>"
+
 
 "       *** VimWiki
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'list_margin': 2},
