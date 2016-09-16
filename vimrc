@@ -95,8 +95,6 @@ nmap <silent> <F2> <Plug>DashSearch
 " Right/Left to move through location list (e.g. Syntastic errors)
 nnoremap <Right> :lnext<CR>
 nnoremap <Left> :lprev<CR>
-inoremap <Right> <C-O>:lnext<CR>
-inoremap <Left> <C-O>:lprev<CR>
 " PgDown to drop search highlighting
 nnoremap <PageDown> :nohl<CR>
 inoremap <PageDown> <C-O>:nohl<CR>
@@ -111,6 +109,11 @@ let g:LustyJugglerSuppressRubyWarning = 1
 
 "       *** Ultisnips
 let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger="<Right>"
+let g:UltiSnipsListSnippets="<Left>"
+let g:UltiSnipsJumpForwardTrigger="<Down>"
+let g:UltiSnipsJumpBackwardTrigger="<Up>"
+
 
 "       *** VimWiki
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'list_margin': 2},
@@ -135,6 +138,9 @@ set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
 
 "       *** Syntastic
 let g:syntastic_always_populate_loc_list = 1
+" be passive on go
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
 
 "       *** Vimoutliner
 autocmd FileType votl set listchars=tab:\ \ ,trail:¿,extends:¿,precedes:¿,nbsp:·
@@ -195,6 +201,13 @@ let g:rubycomplete_classes_in_global = 1
 let g:racer_cmd=$HOME . "/.cargo/bin/racer"
 let $RUST_SRC_PATH=$HOME . "/Projects/External/rustc-1.10.0/src/"
 
+"         *** Go
+autocmd FileType go set listchars=tab:⋄\ ,trail:∴,extends:→,precedes:←,nbsp:·
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+let g:go_list_type = "quickfix"
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
