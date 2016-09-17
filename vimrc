@@ -208,6 +208,8 @@ au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 let g:go_list_type = "quickfix"
+" vimproc is broken on Windows
+let g:go#use_vimproc = 0
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
