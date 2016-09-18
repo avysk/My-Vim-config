@@ -59,8 +59,12 @@ set tabpagemax=20
 
 "                        *** Decorations ***
 "set listchars=
-set list
-set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
+if has("win32")
+        " Nothing
+else
+        set list
+        set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
+endif
 "if ($TERM=="screen")
 "        set nolist
 "else
