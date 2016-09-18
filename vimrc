@@ -241,8 +241,15 @@ au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 let g:go_list_type = "quickfix"
+if has("win32")
+        " vimproc seems to be broken on Windows
+        let g:go#use_vimproc = 0
+endif
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
 filetype plugin on
 filetype indent on
+
+set encoding=utf-8
+set fileencoding=utf-8
