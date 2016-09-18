@@ -77,9 +77,17 @@ set showcmd
 
 "                         *** Bindings ***
 " text in Russian
-map <Leader>rus :so ~/.vim/scripts/rus_text.vim<C-M>
-" text in Engling
-map <Leader>eng :so ~/.vim/scripts/eng_text.vim<C-M>
+if has("win32")
+        map <Leader>rus :so $HOME/vimfiles/scripts/rus_text.vim<C-M>
+else
+        map <Leader>rus :so ~/.vim/scripts/rus_text.vim<C-M>
+endif
+" text in English
+if has("win32")
+        map <Leader>eng :so $HOME/vimfiles/scripts/eng_text.vim<C-M>
+else
+        map <Leader>eng :so ~/.vim/scripts/eng_text.vim<C-M>
+endif
 " scratch
 map <F4> <C-\><C-N>:ScratchTab<CR>
 map <F5> <C-\><C-N>:ScratchWindow<CR>
