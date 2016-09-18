@@ -186,19 +186,23 @@ autocmd FileType python setlocal shiftwidth=4
 let g:syntastic_python_checkers=['pep8', 'pylint', 'python']
 
 "         *** OCaml
-let g:ocaml_folding=1
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-"let s:ocp_indent = 'source ' . g:opamshare . '/vim/syntax/ocp-indent.vim'
-autocmd FileType ocaml iabbrev <buffer> _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
-autocmd FileType ocaml setlocal tw=0
-autocmd FileType ocaml setlocal softtabstop=2
-autocmd FileType ocaml setlocal shiftwidth=2
-"autocmd FileType ocaml exec s:ocp_indent
+if has("win32")
+        " Nothing
+else
+        let g:ocaml_folding=1
+        let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+        "let s:ocp_indent = 'source ' . g:opamshare . '/vim/syntax/ocp-indent.vim'
+        autocmd FileType ocaml iabbrev <buffer> _ML (*<C-M><BS><BS>vim:sw=2<C-M>*)
+        autocmd FileType ocaml setlocal tw=0
+        autocmd FileType ocaml setlocal softtabstop=2
+        autocmd FileType ocaml setlocal shiftwidth=2
+        "autocmd FileType ocaml exec s:ocp_indent
 
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
+        execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
-" use merlin for syntastic
-let g:syntastic_ocaml_checkers = ['merlin']
+        " use merlin for syntastic
+        let g:syntastic_ocaml_checkers = ['merlin']
+endif
 
 "         *** Lisp
 let g:lisp_rainbow=1
