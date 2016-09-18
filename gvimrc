@@ -21,6 +21,14 @@ if has("gui_gtk2")
         map <Leader>font :set guifont=Inconsolata\ Medium\ 16<C-M>
 endif
 
+if has("win32")
+        language C
+        colorscheme ir_black
+        set guifont=Hasklig:h12
+        set guioptions-=T
+        set guioptions-=m
+endif
+
 map <Leader>dark :colorscheme ir_black<C-M>
 map <Leader>blue :colorscheme darkblue<C-M>
 
