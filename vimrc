@@ -246,6 +246,11 @@ if has("win32")
         let g:go#use_vimproc = 0
 endif
 
+" TSLIME
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars
+
 " KEEP THOSE AT THE BOTTOM
 syntax on
 filetype plugin on
