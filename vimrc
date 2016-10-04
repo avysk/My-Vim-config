@@ -257,6 +257,9 @@ nmap <unique> <C-c>r <Plug>SetTmuxVars
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
+if hostname() == 'legume.ocaml.nl'
+        set background=dark
+endif
 filetype plugin on
 filetype indent on
 
