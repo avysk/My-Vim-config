@@ -240,10 +240,10 @@ let $RUST_SRC_PATH=$HOME . "/Projects/External/rustc-1.10.0/src/"
 
 "         *** Go
 autocmd FileType go set listchars=tab:⋄\ ,trail:∴,extends:→,precedes:←,nbsp:·
-au FileType go nmap <unique> <leader>r <Plug>(go-run)
-au FileType go nmap <unique> <leader>b <Plug>(go-build)
-au FileType go nmap <unique> <leader>t <Plug>(go-test)
-au FileType go nmap <unique> <leader>c <Plug>(go-coverage)
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
 let g:go_list_type = "quickfix"
 if has("win32")
         " vimproc seems to be broken on Windows
