@@ -50,8 +50,9 @@ set foldmethod=syntax
 " Buffers
 set hidden " Use hidden buffers liberally
 set switchbuf=usetab,newtab
-map <Leader>bb :buf 
-map <Leader>vb :vertical sb 
+nmap <unique> <Leader>ls :ls<CR>:buf 
+nmap <unique> <Leader>bb :buf 
+nmap <unique> <Leader>vb :vertical sb 
 
 " Tabs
 set tabpagemax=20
@@ -239,10 +240,10 @@ let $RUST_SRC_PATH=$HOME . "/Projects/External/rustc-1.10.0/src/"
 
 "         *** Go
 autocmd FileType go set listchars=tab:⋄\ ,trail:∴,extends:→,precedes:←,nbsp:·
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <unique> <leader>r <Plug>(go-run)
+au FileType go nmap <unique> <leader>b <Plug>(go-build)
+au FileType go nmap <unique> <leader>t <Plug>(go-test)
+au FileType go nmap <unique> <leader>c <Plug>(go-coverage)
 let g:go_list_type = "quickfix"
 if has("win32")
         " vimproc seems to be broken on Windows
@@ -250,9 +251,9 @@ if has("win32")
 endif
 
 " TSLIME
-vmap <C-c><C-c> <Plug>SendSelectionToTmux
-nmap <C-c><C-c> <Plug>NormalModeSendToTmux
-nmap <C-c>r <Plug>SetTmuxVars
+vmap <unique> <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <unique> <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <unique> <C-c>r <Plug>SetTmuxVars
 
 " KEEP THOSE AT THE BOTTOM
 syntax on
