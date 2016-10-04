@@ -1,3 +1,0 @@
-twitvim-0.7.4.vmb: call delete('/home/alexey/.vim/plugin/twitvim.vim')|call delete('/home/alexey/.vim/doc/twitvim.txt')
-twitvim-0.8.1.vmb: call delete('/Users/alexey/.vim/plugin/twitvim.vim')|call delete('/Users/alexey/.vim/doc/twitvim.txt')
-DrawIt.vba: call delete('/Users/alexey/.vim/plugin/DrawItPlugin.vim')|call delete('/Users/alexey/.vim/plugin/cecutil.vim')|call delete('/Users/alexey/.vim/autoload/DrawIt.vim')|call delete('/Users/alexey/.vim/doc/DrawIt.txt')
