@@ -49,7 +49,7 @@ set foldmethod=syntax
 
 " Buffers
 set hidden " Use hidden buffers liberally
-set switchbuf=usetab,newtab
+set switchbuf=usetab,split
 nmap <unique> <Leader>ls :ls<CR>:buf 
 nmap <unique> <Leader>bb :buf 
 nmap <unique> <Leader>vb :vertical sb 
