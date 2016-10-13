@@ -187,7 +187,7 @@ let fortran_do_enddo=1
 "         *** Python
 autocmd FileType python setlocal softtabstop=4
 autocmd FileType python setlocal shiftwidth=4
-let g:syntastic_python_checkers=['pep8', 'pylint', 'python']
+let g:syntastic_python_checkers=['pycodestyle', 'pylint', 'python']
 
 "         *** OCaml
 if has("win32")
