@@ -140,6 +140,9 @@ let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'list_margin': 2},
 nmap <leader>tt <Plug>VimwikiToggleListItem
 autocmd FileType vimwiki set tw=80
 
+nmap <F1> 2<Plug>VimwikiTabMakeDiaryNote
+nmap <S-F1> 2<Plug>VimwikiDiaryIndex
+
 "         *** Git
 " Autoremove fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
