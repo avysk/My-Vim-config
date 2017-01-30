@@ -253,10 +253,18 @@ if has("win32")
         let g:go#use_vimproc = 0
 endif
 
+"         *** FSharp
+autocmd FileType fsharp set sw=4
+autocmd FileType fsharp set sts=4
+
 " TSLIME
 vmap <unique> <C-c><C-c> <Plug>SendSelectionToTmux
 nmap <unique> <C-c><C-c> <Plug>NormalModeSendToTmux
 nmap <unique> <C-c>r <Plug>SetTmuxVars
+
+" VOoM
+let g:voom_return_key = "<C-Return>"
+let g:voom_tab_key = "<C-Tab>"
 
 " KEEP THOSE AT THE BOTTOM
 syntax on

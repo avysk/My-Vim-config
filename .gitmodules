@@ -89,3 +89,6 @@
 [submodule "bundle/tslime.vim"]
 	path = bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "bundle/VOoM"]
+	path = bundle/VOoM
+	url = https://github.com/vim-voom/VOoM.git
