@@ -22,6 +22,7 @@
 [submodule "bundle/vim-iawriter"]
 	path = bundle/vim-iawriter
 	url = git@github.com:jacekd/vim-iawriter.git
+	ignore = dirty
 [submodule "bundle/vimoutliner"]
 	path = bundle/vimoutliner
 	url = https://github.com/vimoutliner/vimoutliner.git
