@@ -92,3 +92,6 @@
 [submodule "bundle/VOoM"]
 	path = bundle/VOoM
 	url = https://github.com/vim-voom/VOoM.git
+[submodule "bundle/omnisharp-vim"]
+	path = bundle/omnisharp-vim
+	url = https://github.com/OmniSharp/omnisharp-vim.git
