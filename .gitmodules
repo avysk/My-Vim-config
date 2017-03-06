@@ -73,12 +73,6 @@
 	path = bundle/DrawIt
 	url = https://github.com/vim-scripts/DrawIt.git
 	ignore = untracked
-[submodule "bundle/rust"]
-	path = bundle/rust
-	url = https://github.com/rust-lang/rust.vim.git
-[submodule "bundle/vim-racer"]
-	path = bundle/vim-racer
-	url = https://github.com/racer-rust/vim-racer.git
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git

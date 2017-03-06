@@ -237,10 +237,6 @@ let g:syntastic_ruby_checkers=['rubocop', 'mri']
 " let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 
-"         *** Rust
-let g:racer_cmd=$HOME . "/.cargo/bin/racer"
-let $RUST_SRC_PATH=$HOME . "/Projects/External/rustc-1.10.0/src/"
-
 "         *** Go
 autocmd FileType go set listchars=tab:⋄\ ,trail:∴,extends:→,precedes:←,nbsp:·
 au FileType go nmap <leader>r <Plug>(go-run)
