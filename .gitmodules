@@ -71,6 +71,7 @@
 [submodule "bundle/DrawIt"]
 	path = bundle/DrawIt
 	url = https://github.com/vim-scripts/DrawIt.git
+	ignore = untracked
 [submodule "bundle/rust"]
 	path = bundle/rust
 	url = https://github.com/rust-lang/rust.vim.git
@@ -89,6 +90,7 @@
 [submodule "bundle/VOoM"]
 	path = bundle/VOoM
 	url = https://github.com/vim-voom/VOoM.git
+	ignore = untracked
 [submodule "bundle/omnisharp-vim"]
 	path = bundle/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim.git
