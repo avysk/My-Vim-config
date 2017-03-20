@@ -92,3 +92,6 @@
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule "bundle/es.next.syntax.vim"]
+	path = bundle/es.next.syntax.vim
+	url = git@github.com:othree/es.next.syntax.vim.git
