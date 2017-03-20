@@ -218,7 +218,7 @@ let g:lisp_rainbow=1
 au BufRead,BufNewFile *.sc set filetype=scala
 
 "         *** Javascript
-let g:syntastic_javascript_jslint_args = "--white"
+let g:syntastic_javascript_checkers = ['eslint']
 " ...and jsx extensions
 let g:jsx_ext_required = 0
 
