@@ -136,7 +136,7 @@ let g:UltiSnipsJumpBackwardTrigger="<Up>"
 "       *** VimWiki
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'list_margin': 2},
                     \ {'path': '~/vimwiki', 'list_margin': 2},
-                    \ {'path': '~/Dropbox/vimwiki-md', 'list_margin': 2, 'syntax': 'markdown', 'ext': '.md'}]
+                    \ {'path': '~/Dropbox/vimwiki-md', 'list_margin': 2, 'syntax': 'markdown', 'ext': '.mdw'}]
 nmap <leader>tt <Plug>VimwikiToggleListItem
 autocmd FileType vimwiki set tw=80
 
