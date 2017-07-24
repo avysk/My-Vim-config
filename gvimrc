@@ -24,9 +24,9 @@ endif
 if has("win32")
         language C
         colorscheme ir_black
-        set guifont=Hasklig:h12
+        set guifont=Hasklig:h12:cRUSSIAN:qDEFAULT
         set guioptions-=T
-        set guioptions-=m
+        set guioptions-=r
 endif
 
 map <Leader>dark :colorscheme ir_black<C-M>
