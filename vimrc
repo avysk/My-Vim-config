@@ -134,14 +134,15 @@ let g:UltiSnipsJumpBackwardTrigger="<Up>"
 
 
 "       *** VimWiki
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'list_margin': 2},
-                    \ {'path': '~/vimwiki', 'list_margin': 2},
-                    \ {'path': '~/Dropbox/vimwiki-md', 'list_margin': 2, 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/vimwiki', 'list_margin': 2},
+                    \ {'path': '~/Dropbox/vimwiki', 'list_margin': 2},
+                    \ {'path': '~/Dropbox/vimwiki-md', 'list_margin': 2, 'syntax': 'markdown', 'ext': '.mdw'}]
 nmap <leader>tt <Plug>VimwikiToggleListItem
 autocmd FileType vimwiki set tw=80
+autocmd FileType vimwiki set nowrap
 
-nmap <F1> 2<Plug>VimwikiTabMakeDiaryNote
-nmap <S-F1> 2<Plug>VimwikiDiaryIndex
+nmap <F1> <Plug>VimwikiTabMakeDiaryNote
+nmap <S-F1> <Plug>VimwikiDiaryIndex
 
 "         *** Git
 " Autoremove fugitive buffers
