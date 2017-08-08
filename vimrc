@@ -133,6 +133,11 @@ let g:UltiSnipsJumpForwardTrigger="<Down>"
 let g:UltiSnipsJumpBackwardTrigger="<Up>"
 
 
+"       *** YouCompleteMe
+" let it work in virtualenv
+let g:ycm_python_binary_path = 'python'
+
+
 "       *** VimWiki
 let g:vimwiki_list = [{'path': '~/vimwiki', 'list_margin': 2},
                     \ {'path': '~/Dropbox/vimwiki', 'list_margin': 2},

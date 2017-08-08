@@ -95,3 +95,6 @@
 [submodule "bundle/es.next.syntax.vim"]
 	path = bundle/es.next.syntax.vim
 	url = git@github.com:othree/es.next.syntax.vim.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
