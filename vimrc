@@ -316,10 +316,11 @@ let g:voom_return_key = "<C-Return>"
 let g:voom_tab_key = "<C-Tab>"
 
 " KEEP THOSE AT THE BOTTOM
-syntax on
-if hostname() == 'legume.ocaml.nl'
-        set background=dark
+let localrc=$HOME."/.vim_local"
+if filereadable(localrc)
+        source $HOME/.vim_local
 endif
+syntax on
 filetype plugin on
 filetype indent on
 
