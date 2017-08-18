@@ -136,7 +136,7 @@ let g:UltiSnipsJumpBackwardTrigger="<Up>"
 "       *** YouCompleteMe
 " let it work in virtualenv
 let g:ycm_python_binary_path = 'python'
-
+nnoremap <Leader>] :YcmCompleter GoTo<CR>
 
 "       *** VimWiki
 let g:vimwiki_list = [{'path': '~/vimwiki', 'list_margin': 2},
@@ -305,6 +305,9 @@ augroup omnisharp_commands
     autocmd FileType cs nnoremap <C-J> :OmniSharpNavigateDown<cr>
 
 augroup END
+
+" Rust
+let g:syntastic_rust_checkers = ['cargo', 'rustc']
 
 " TSLIME
 vmap <unique> <C-c><C-c> <Plug>SendSelectionToTmux
