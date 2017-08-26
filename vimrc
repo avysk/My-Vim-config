@@ -1,3 +1,8 @@
+let g:pathogen_disabled = []
+if !has("python")
+        call add(g:pathogen_disabled, 'omnisharp-vim')
+endif
+
 if has("win32")
         language C
 endif
