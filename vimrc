@@ -1,3 +1,8 @@
+let g:pathogen_disabled = []
+if !has("python")
+        call add(g:pathogen_disabled, 'omnisharp-vim')
+endif
+
 if has("win32")
         language C
 endif
@@ -308,7 +313,7 @@ augroup omnisharp_commands
 augroup END
 
 " Rust
-let g:syntastic_rust_checkers = ['cargo', 'rustc']
+let g:syntastic_rust_checkers = ['cargo']
 
 " TSLIME
 vmap <unique> <C-c><C-c> <Plug>SendSelectionToTmux
