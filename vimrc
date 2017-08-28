@@ -25,6 +25,7 @@ set showmatch
 set noequalalways
 set wildmode=list:longest
 set relativenumber
+set number
 
 " Remember marks in 20 last files
 " Remember up to 1000 lines per register
