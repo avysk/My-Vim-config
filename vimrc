@@ -63,7 +63,6 @@ nmap <unique> <Leader>vb :vertical sb
 " Tabs
 set tabpagemax=20
 
-
 "                        *** Decorations ***
 "set listchars=
 if has("win32")
@@ -154,6 +153,7 @@ autocmd FileType vimwiki set nowrap
 
 nmap <F1> <Plug>VimwikiTabMakeDiaryNote
 nmap <S-F1> <Plug>VimwikiDiaryIndex
+nmap <leader><F1> <Plug>VimwikiDiaryIndex
 
 "         *** Git
 " Autoremove fugitive buffers
