@@ -14,6 +14,8 @@ set display+=lastline
 
 map <buffer> <Down> gj
 map <buffer> <Up> gk
+map <buffer> j gj
+map <buffer> k gk
 imap <buffer> <Down> <C-o>gj
 imap <buffer> <Up> <C-o>gk
 
