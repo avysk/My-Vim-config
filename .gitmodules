@@ -113,3 +113,9 @@
 [submodule ".\\bundle\\vim-eastwood"]
 	path = .\\bundle\\vim-eastwood
 	url = https://github.com/venantius/vim-eastwood.git
+[submodule "bundle/rainbow_parentheses"]
+	path = bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "bundle/rainbow"]
+	path = bundle/rainbow
+	url = https://github.com/luochen1990/rainbow.git
