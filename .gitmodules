@@ -107,15 +107,12 @@
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
 	url = git://github.com/tpope/vim-fireplace.git
-[submodule ".\\bundle\\vim-cljfmt"]
-	path = .\\bundle\\vim-cljfmt
+[submodule "bundle/vim-cljfmt"]
+	path = bundle/vim-cljfmt
 	url = https://github.com/venantius/vim-cljfmt.git
-[submodule ".\\bundle\\vim-eastwood"]
-	path = .\\bundle\\vim-eastwood
+[submodule "bundle/vim-eastwood"]
+	path = bundle/vim-eastwood
 	url = https://github.com/venantius/vim-eastwood.git
-[submodule "bundle/rainbow_parentheses"]
-	path = bundle/rainbow_parentheses
-	url = https://github.com/kien/rainbow_parentheses.vim.git
 [submodule "bundle/rainbow"]
 	path = bundle/rainbow
 	url = https://github.com/luochen1990/rainbow.git
