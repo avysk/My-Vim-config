@@ -249,6 +249,11 @@ let g:syntastic_ruby_checkers=['rubocop', 'mri']
 " let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 
+" ...and now to make MacVim happy
+if has("gui_macvim")
+  set rubydll=/opt/local/lib/libruby.2.4.dylib
+endif
+
 "         *** Go
 autocmd FileType go set listchars=tab:⋄\ ,trail:∴,extends:→,precedes:←,nbsp:·
 au FileType go nmap <leader>r <Plug>(go-run)
