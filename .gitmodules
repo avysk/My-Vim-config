@@ -104,3 +104,15 @@
 [submodule "bundle/vim-toml"]
 	path = bundle/vim-toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = git://github.com/tpope/vim-fireplace.git
+[submodule "bundle/vim-cljfmt"]
+	path = bundle/vim-cljfmt
+	url = https://github.com/venantius/vim-cljfmt.git
+[submodule "bundle/vim-eastwood"]
+	path = bundle/vim-eastwood
+	url = https://github.com/venantius/vim-eastwood.git
+[submodule "bundle/rainbow"]
+	path = bundle/rainbow
+	url = https://github.com/luochen1990/rainbow.git

@@ -320,6 +320,11 @@ augroup END
 " Rust
 let g:syntastic_rust_checkers = ['cargo']
 
+" Clojure
+let g:syntastic_clojure_checkers = ['eastwood']
+let g:rainbow_active = 0
+autocmd VimEnter *.clj RainbowToggleOn
+
 " TSLIME
 vmap <unique> <C-c><C-c> <Plug>SendSelectionToTmux
 nmap <unique> <C-c><C-c> <Plug>NormalModeSendToTmux
