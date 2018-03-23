@@ -10,3 +10,4 @@
    `microsoft-build-tools` with chocolatey package manager, the path to
    the installed executable is something like
    `C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\14.0\Bin\MSBuild.exe`
+   You may need to add '/p:Platform="Any CPU"' to msbuild command
