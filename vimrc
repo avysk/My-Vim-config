@@ -110,11 +110,6 @@ imap <F15> <C-\><C-N>:CloseScratch<CR>
 " tagbar
 nmap <F12> :TagbarToggle<CR>
 
-" Dash.app
-if has("osx")
-        nmap <silent> <F2> <Plug>DashSearch
-endif
-
 " Right/Left to move through location list (e.g. Syntastic errors)
 nnoremap <Right> :lnext<CR>
 nnoremap <Left> :lprev<CR>

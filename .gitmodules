@@ -7,9 +7,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/dash.vim"]
-	path = bundle/dash.vim
-	url = https://github.com/rizzatti/dash.vim.git
 [submodule "bundle/ocp-indent"]
 	path = bundle/ocp-indent
 	url = git@github.com:def-lkb/ocp-indent-vim.git
@@ -35,10 +32,6 @@
 [submodule "bundle/procvim"]
 	path = bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "bundle/tsuquyomi"]
-	path = bundle/tsuquyomi
-	url = https://github.com/Quramy/tsuquyomi.git
-        ignore = untracked
 [submodule "bundle/yajs"]
 	path = bundle/yajs
 	url = https://github.com/othree/yajs.vim
@@ -76,9 +69,6 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/tslime.vim"]
 	path = bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
@@ -86,12 +76,6 @@
 	path = bundle/VOoM
 	url = https://github.com/vim-voom/VOoM.git
 	ignore = untracked
-[submodule "bundle/omnisharp-vim"]
-	path = bundle/omnisharp-vim
-	url = https://github.com/OmniSharp/omnisharp-vim.git
-[submodule "bundle/vim-dispatch"]
-	path = bundle/vim-dispatch
-	url = git://github.com/tpope/vim-dispatch.git
 [submodule "bundle/es.next.syntax.vim"]
 	path = bundle/es.next.syntax.vim
 	url = git@github.com:othree/es.next.syntax.vim.git
