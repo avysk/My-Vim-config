@@ -23,15 +23,6 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = git@github.com:vimwiki/vimwiki.git
-[submodule "bundle/yats"]
-	path = bundle/yats
-	url = https://github.com/HerringtonDarkholme/yats.vim
-[submodule "bundle/yajs"]
-	path = bundle/yajs
-	url = https://github.com/othree/yajs.vim
-[submodule "bundle/javascript-libraries-syntax"]
-	path = bundle/javascript-libraries-syntax
-	url = https://github.com/othree/javascript-libraries-syntax.vim
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
@@ -57,9 +48,6 @@
 	path = bundle/DrawIt
 	url = https://github.com/vim-scripts/DrawIt.git
 	ignore = untracked
-[submodule "bundle/vim-jsx"]
-	path = bundle/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
 [submodule "bundle/tslime.vim"]
 	path = bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
@@ -67,9 +55,6 @@
 	path = bundle/VOoM
 	url = https://github.com/vim-voom/VOoM.git
 	ignore = untracked
-[submodule "bundle/es.next.syntax.vim"]
-	path = bundle/es.next.syntax.vim
-	url = git@github.com:othree/es.next.syntax.vim.git
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
