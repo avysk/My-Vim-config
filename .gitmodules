@@ -83,9 +83,6 @@
 	path = bundle/VOoM
 	url = https://github.com/vim-voom/VOoM.git
 	ignore = untracked
-[submodule "bundle/omnisharp-vim"]
-	path = bundle/omnisharp-vim
-	url = https://github.com/OmniSharp/omnisharp-vim.git
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
