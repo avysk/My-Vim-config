@@ -29,6 +29,10 @@ if has("win32")
         set guioptions-=r
 endif
 
+if has("directx")
+        set renderoptions=type:directx
+endif
+
 map <Leader>dark :colorscheme ir_black<C-M>
 map <Leader>blue :colorscheme darkblue<C-M>
 
