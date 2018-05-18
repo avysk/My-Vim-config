@@ -10,9 +10,6 @@
 [submodule "bundle/ocp-indent"]
 	path = bundle/ocp-indent
 	url = git@github.com:def-lkb/ocp-indent-vim.git
-[submodule "bundle/vim-scala"]
-	path = bundle/vim-scala
-	url = git@github.com:derekwyatt/vim-scala.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
@@ -50,9 +47,6 @@
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "bundle/vim-fsharp"]
 	path = bundle/vim-fsharp
 	url = https://github.com/fsharp/vim-fsharp.git
