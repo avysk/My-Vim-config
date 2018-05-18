@@ -29,9 +29,6 @@
 [submodule "bundle/yats"]
 	path = bundle/yats
 	url = https://github.com/HerringtonDarkholme/yats.vim
-[submodule "bundle/procvim"]
-	path = bundle/vimproc
-	url = https://github.com/Shougo/vimproc.vim.git
 [submodule "bundle/yajs"]
 	path = bundle/yajs
 	url = https://github.com/othree/yajs.vim
