@@ -69,9 +69,6 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/tslime.vim"]
 	path = bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
@@ -79,9 +76,6 @@
 	path = bundle/VOoM
 	url = https://github.com/vim-voom/VOoM.git
 	ignore = untracked
-[submodule "bundle/vim-dispatch"]
-	path = bundle/vim-dispatch
-	url = git://github.com/tpope/vim-dispatch.git
 [submodule "bundle/es.next.syntax.vim"]
 	path = bundle/es.next.syntax.vim
 	url = git@github.com:othree/es.next.syntax.vim.git
