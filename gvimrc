@@ -24,7 +24,8 @@ endif
 if has("win32")
         language C
         colorscheme ir_black
-        set guifont=Hasklig:h12:cRUSSIAN:qDEFAULT
+        hi ColorColumn guibg=#252525
+        set guifont=Iosevka:h14:cRUSSIAN:qDEFAULT
         set guioptions-=T
         set guioptions-=r
 endif
