@@ -122,6 +122,12 @@ nnoremap <PageUp> <C-^>
 
 "                        *** Plugins settings ***
 
+"       *** Gitgutter
+" faster realtime updates
+set updatetime=1000
+" Highlight changed lines
+let g:gitgutter_highlight_lines=1
+
 "       *** Lusty explorer
 " Silence message about non-available Ruby
 let g:LustyJugglerSuppressRubyWarning = 1
