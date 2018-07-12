@@ -65,19 +65,12 @@ nmap <unique> <Leader>vb :vertical sb
 set tabpagemax=20
 
 "                        *** Decorations ***
-"set listchars=
 if has("win32")
         " Nothing
 else
         set list
         set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
 endif
-"if ($TERM=="screen")
-"        set nolist
-"else
-"        set list
-"        set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
-"endif
 set ruler
 set laststatus=2
 set showcmd
