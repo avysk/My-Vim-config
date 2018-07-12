@@ -151,20 +151,6 @@ nmap <F1> <Plug>VimwikiTabMakeDiaryNote
 nmap <S-F1> <Plug>VimwikiDiaryIndex
 nmap <leader><F1> <Plug>VimwikiDiaryIndex
 
-"         *** Git
-" Autoremove fugitive buffers
-autocmd BufReadPost fugitive://* set bufhidden=delete
-" More fugitive hacks
-function IsFugitive()
-    if stridx(bufname(""),"fugitive://") == 0
-        return "[!!!]"
-    else
-        return bufnr("")
-    endif
-endfunction
-
-set statusline=(%{IsFugitive()})\ %(%h\ %)%t%(\ %m%)\ %y\ %=%(%c%V\ %l/%L(%P)%)
-
 "       *** Syntastic
 let g:syntastic_always_populate_loc_list = 1
 " be passive on go
