@@ -1,3 +1,4 @@
+" vim: set fileencoding=utf8 :
 "                         *** Pathogen -- set runtime path ***
 call pathogen#infect()
 
@@ -38,12 +39,11 @@ set tabpagemax=1
 "                        *** Decorations ***
 "set listchars=
 set list
-set listchars=tab:⇒⋄,trail:∴,extends:→,precedes:←,nbsp:·
+set listchars=
 "if ($TERM=="screen")
 "        set nolist
 "else
 "        set list
-"        set listchars=tab:⇒…,trail:∴,extends:→,precedes:←,nbsp:·
 "endif
 set ruler
 set laststatus=2
